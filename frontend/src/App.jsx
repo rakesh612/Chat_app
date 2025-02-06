@@ -3,7 +3,7 @@ import Navbar from './components/Navbar.jsx'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import HomePage from './pages/HomePage.jsx'
 import SignUpPage from './pages/SignUpPage.jsx'
-import LoginPage from './pages/loginPage.jsx'
+import LoginPage from './pages/LoginPage.jsx'
 import SettingsPage from './pages/settingsPage.jsx'
 import ProfilePage from './pages/profilePage.jsx'
 import { useAuthStore } from './store/useAuthStore.js'
@@ -32,7 +32,6 @@ const App = () => {
 
   return (
     <div data-theme={theme}>
-      
       <Navbar />
       <Routes>
         <Route path="/" element={authUser ? <HomePage /> : <Navigate to="/login" />}/>
