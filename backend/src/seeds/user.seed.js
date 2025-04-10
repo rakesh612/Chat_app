@@ -1,7 +1,7 @@
 import { config } from "dotenv";
 import { connectDB } from "../lib/db.js";
 import User from "../models/user.model.js";
-//config the dotenv package to use the .env file
+
 config();
 
 const seedUsers = [
